@@ -18,5 +18,16 @@ form.addEventListener("submit", (e) => {
             score += 25;
         }
     });
-
+            //For showing results
+    let output = 0;
+    const timer = setInterval(() => {
+        //For score animation
+        result.querySelector("span").textContent = `${output}%`;
+        if (output === score) {
+            clearInterval();
+        } else {
+            output++;
+        }
+    }, 75);
+    result.classList.remove("d-none");
 });
