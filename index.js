@@ -18,6 +18,7 @@ form.addEventListener("submit", (e) => {
             score += 25;
         }
     });
+    window.scrollTo(0, 0); //////// Scroll to top the page
             //For showing results
     let output = 0;
     const timer = setInterval(() => {
